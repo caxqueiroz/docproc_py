@@ -11,7 +11,7 @@ setup(
         "PyPDF2==3.0.1",
         "python-docx==0.8.11",
         "openpyxl==3.1.2",
-        "Pillow==10.1.0",
+        "Pillow==10.3.0",
         "pytesseract==0.3.10",
         "openai==1.3.0",
         "python-dotenv==1.0.0",
