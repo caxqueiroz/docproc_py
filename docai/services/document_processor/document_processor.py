@@ -16,8 +16,8 @@ class DocumentProcessor:
 
     def _store_file(self, file_path: Path, original_filename: str) -> Path:
         """Store the file in the storage directory with a unique name"""
-        file_extension = original_filename.suffix
-        storage_filename = f"{original_filename.stem}_{file_path.stat().st_mtime_ns}{file_extension}"
+        original_path = Path(original_filename)
+        storage_filename = f"{original_path.stem}_{file_path.stat().st_mtime_ns}{original_path.suffix}"
         storage_file_path = self.storage_path / storage_filename
         shutil.copy2(file_path, storage_file_path)
         return storage_file_path

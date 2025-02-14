@@ -1,1 +1,5 @@
 .env
+.docai
+__pycache__
+.coverage
+docai.egg-info
