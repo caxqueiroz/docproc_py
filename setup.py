@@ -7,7 +7,7 @@ setup(
     install_requires=[
         "fastapi==0.104.1",
         "uvicorn==0.24.0",
-        "python-multipart==0.0.6",
+        "python-multipart==0.0.18",
         "PyPDF2==3.0.1",
         "python-docx==0.8.11",
         "openpyxl==3.1.2",
